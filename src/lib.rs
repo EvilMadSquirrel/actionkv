@@ -78,4 +78,16 @@ impl AktionKV {
         let key = data;
         Ok(KeyValuePair { key, value })
     }
+    pub fn get(&mut self, key: &ByteStr) -> io::Result<Option<ByteString>> {
+        unimplemented!();
+    }
+    pub fn insert(&mut self, key: &ByteStr, value: &ByteStr) -> io::Result<()> {
+        unimplemented!();
+    }
+    pub fn update(&mut self, key: &ByteStr, value: &ByteStr) -> io::Result<()> {
+        unimplemented!();
+    }
+    pub fn delete(&mut self, key: &ByteStr) -> io::Result<()> {
+        unimplemented!();
+    }
 }
